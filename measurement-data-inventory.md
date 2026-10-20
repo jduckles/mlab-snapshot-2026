@@ -1,10 +1,10 @@
-# What Internet Measurement Data Is For
+# What Internet Measurement Data Can Be Used For
 
-*An annotated inventory of reuse in M-Lab's public record, 2013–2026*
+*An AI assisted, annotated inventory of M-Lab's public record of blog posts, 2013–2026*
 
 A speed test answers a narrow question: how fast can this connection move data right now? The record it leaves behind can answer other questions. It includes throughput, latency, loss, the addresses at both ends, the path between them, and the conditions under which the test ran. Aggregated over millions of tests and fifteen years, that record becomes evidence about peering, disasters, pandemic demand, school connectivity, protocol design, regulation, and the measurement system itself.
 
-This inventory collects examples of that reuse. It is not a list of everything M-Lab has published. It is a set of cases that show where the value came from: secondary use, joins with other data, reprocessing old raw data under better annotations, and public access that lets someone else ask a question no one planned for. The pattern is consistent. The value is rarely in the original test.
+This inventory collects examples of that work. It is not a list of everything M-Lab has published. It is a set of cases that show where the value came from: secondary use, joins with other data, reprocessing old raw data under better annotations, and public access that lets someone else ask a question no one planned for.
 
 ## Interconnection
 
@@ -14,7 +14,7 @@ The follow-up work made the method plain. Compare an access ISP's performance ac
 
 The most useful finding came from raw packet traces, not summary statistics. A sharp recovery across all affected access ISPs in February 2014 coincided with a change in the IP Type-of-Service marking on incoming packets: roughly a tenth of sampled measurements in early February, 30% by February 20, and about 94% five days later. Throughput rose at the same time ([Research Updates: Beginning to Observe Network Management Practices as a Third Party](https://measurementlab.net/blog/research_update1/)). The data could not establish who changed the marking or why. It did show that a performance time series could raise a specific question about network management.
 
-A later reanalysis found that detectable congestion episodes declined after the 2015 Open Internet Order. Published interconnection agreements between Verizon and Level 3, and AT&T and GTT, were followed within days by measurable restoration ([Monitoring Interconnection Performance Since the Open Internet Order](https://measurementlab.net/blog/interconnection_update/)). The causal caution still applies. Measurement can establish association and timing. It cannot establish intent or responsibility. That is enough to make a market observable.
+A later reanalysis found that detectable congestion episodes declined after the 2015 Open Internet Order. Published interconnection agreements between Verizon and Level 3, and AT&T and GTT, were followed within days by measurable restoration ([Monitoring Interconnection Performance Since the Open Internet Order](https://measurementlab.net/blog/interconnection_update/)). The causal caution still applies. Measurement can establish association and timing. 
 
 ## Resilience
 
@@ -42,7 +42,7 @@ The same pattern works at the scale of a single institution. Murakami devices in
 
 The federal layer shows both the power and the trap. NTIA's Indicators of Broadband Need added M-Lab county medians to a map that already contained FCC Form 477 advertised speeds, Ookla measurements, and Microsoft application-level telemetry. These are four different instruments measuring four different things under one visual vocabulary ([NDT Data in NTIA Indicators of Broadband Need](https://measurementlab.net/blog/ntia/)).
 
-Louisville and Michigan are the payoff. Baltimore is the caution. There, city-wide NDT data collapsed to only 50 distinct latitude/longitude points, and the author's own three home addresses geolocated outside the neighborhood. Community-area medians looked nearly identical because the underlying points did not resolve to communities ([Exploring NDT Data by Geography in Baltimore City](https://measurementlab.net/blog/exploring-geographic-limits-of-ip-geolocation/)). Geographic precision is a property of the collection design, not a property of the dataset. Local collection, premise devices, and volunteered location recover what IP annotation cannot.
+In Baltimore city-wide NDT data collapsed to only 50 distinct latitude/longitude points, and three home addresses geolocated outside the neighborhood they were known to be in. Community-area medians looked nearly identical because the underlying points did not resolve to communities ([Exploring NDT Data by Geography in Baltimore City](https://measurementlab.net/blog/exploring-geographic-limits-of-ip-geolocation/)). Geographic precision is a property of the collection design, not a property of the dataset. Local collection, premise devices, and volunteered location recover what IP annotation cannot.
 
 The aggregation problem is just as concrete. In one Maryland postal code, an all-provider weighted average concealed Comcast users pulling the number up and two mobile, two satellite, one cable, and one business ISP pulling it down. The all-provider NDT average was 72.9/9.7 Mbps. The Ookla average for the same place was 293/11.65 Mbps ([ARC of Research pt. 2: Exploring Data Sources Relevant to Our Questions](https://measurementlab.net/blog/arc-research-pt2/)). The earlier installment argued that the question determines the instrument: on-net multi-stream tests for advertised access-link speeds, off-net single-stream tests for the path beyond the last mile ([ARC of Research pt. 1: Asking the Right Questions](https://measurementlab.net/blog/arc-of-research-pt1/)).
 
@@ -108,17 +108,3 @@ The human layer matters as much as the pipeline. Fellowships turn open questions
 
 M-Lab also publishes the cases where openness has costs. The SamKnows experiment left the platform when it would not provide an open-source server, despite years of partnership with the FCC's Measuring Broadband America program ([Recent updates regarding the SamKnows experiment](https://measurementlab.net/blog/mlab-public-statement-samknows-experiment/)). Openness is enforced technically, not just declared.
 
-## The inventory, compressed
-
-The record shows eight kinds of reuse:
-
-- **Longitudinal series answer market-structure questions** that no single test can: interconnection congestion, its peak-hour signature, its remediation, and the effect of policy ([2014 report](https://measurementlab.net/blog/2014_interconnection_report/), [2017 update](https://measurementlab.net/blog/interconnection_update/)).
-- **Crowdsourced tests become an observatory** when grouped by access network, location, and destination and compared with a baseline. This is how slowdowns invisible to outage monitors become visible ([HERMES](https://measurementlab.net/blog/hermes/)).
-- **Raw traces answer questions the summary metrics cannot**, from ToS markings to the cause of a traceroute gap ([2014 research update](https://measurementlab.net/blog/research_update1/), [Paris Traceroute brownout](https://measurementlab.net/blog/paris-traceroute-brownout/)).
-- **Operational exhaust is data.** Switch counters diagnosed measurement artifacts and became a standard table. Access tokens, annotations, and schema versions are part of the scientific record ([DISCO](https://measurementlab.net/blog/disco-dataset/), [access tokens](https://measurementlab.net/blog/why-access-tokens/)).
-- **Joins create new instruments**: NDT with BGP, reverse traceroute, IPRS, Wehe, Cloudflare AIM, and school enrollment data ([IPRS](https://measurementlab.net/blog/iprs-data-on-mlab/), [Wehe](https://measurementlab.net/blog/wehe-bigquery-announcement/), [IQB-Edu](https://measurementlab.net/blog/cop-may-meeting/)).
-- **Local collection recovers what national data loses.** Premise devices, volunteered location, and institutional context turn a city-level average into an actionable finding ([Baltimore](https://measurementlab.net/blog/exploring-geographic-limits-of-ip-geolocation/), [Murakami](https://measurementlab.net/blog/murakami/), [Louisville](https://measurementlab.net/blog/communities-driving-broadband-mapping/)).
-- **Measurement changes behavior.** Published comparisons documented or informed fiber spending, regulatory tools, interconnection upgrades, and school-connectivity planning ([Louisville](https://measurementlab.net/blog/communities-driving-broadband-mapping/), [Arcep/Wehe](https://measurementlab.net/blog/wehe-launch/), [Giga](https://measurementlab.net/blog/giga-mlab-cop/)).
-- **The method is transferable.** Off-net vs. on-net, single vs. multi-stream, per-ASN aggregation, log scales, peak/off-peak separation, and client-bias correction apply to any measurement proposal ([policy recommendations](https://measurementlab.net/blog/mlab-data-policy-advocacy/), [NTIA comparison](https://measurementlab.net/blog/ntia/)).
-
-The proposal frame is "unlocking latent value." The record suggests a more specific definition. Latent value is the return on reuse: new services add columns that can be joined to old context; old raw archives can be reprocessed under better annotations; operational logs become datasets; composite indices get stability tests before they guide money; local questions get collection designs, not just maps. A proposal that protects the raw record, the methods, and the ability to rerun the analysis in public can point to fifteen years of precedent. That is the strongest case for the next fifteen.
