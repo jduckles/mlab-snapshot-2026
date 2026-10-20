@@ -10,7 +10,7 @@ I compiled this from 61 posts in M-Lab's blog archive, 2013–2026. It is not an
 
 - `index.html` — generated at build time; the GitHub Pages page with the linked timeline and full annotated inventory.
 - [`measurement-retrospective.svg`](measurement-retrospective.svg) — the standalone timeline. Each milestone links to its source post.
-- [`measurement-data-inventory.md`](measurement-data-inventory.md) — the annotated inventory, with 81 inline citations to 61 posts.
+- [`measurement-data-inventory.md`](measurement-data-inventory.md) — the annotated inventory, with 63 inline citations to 61 posts.
 - `social-card.png` — 1200×630 Open Graph and Twitter card image.
 - `template.html`, `styles.css`, `build.py` — the build that turns the Markdown and SVG into the page.
 
