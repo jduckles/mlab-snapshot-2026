@@ -1,6 +1,6 @@
 # What Internet Measurement Data Is For
 
-*An AI assisted, annotated inventory of reuse in M-Lab's public record of blog posts, 2013–2026*
+*An AI assisted, annotated inventory of M-Lab's public record of blog posts, 2013–2026*
 
 A speed test answers a narrow question: how fast can this connection move data right now? The record it leaves behind can answer other questions. It includes throughput, latency, loss, the addresses at both ends, the path between them, and the conditions under which the test ran. Aggregated over millions of tests and fifteen years, that record becomes evidence about peering, disasters, pandemic demand, school connectivity, protocol design, regulation, and the measurement system itself.
 
