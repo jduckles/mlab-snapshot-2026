@@ -4,7 +4,7 @@
 
 A speed test answers a narrow question: how fast can this connection move data right now? The record it leaves behind can answer other questions. It includes throughput, latency, loss, the addresses at both ends, the path between them, and the conditions under which the test ran. Aggregated over millions of tests and fifteen years, that record becomes evidence about peering, disasters, pandemic demand, school connectivity, protocol design, regulation, and the measurement system itself.
 
-This inventory collects examples of that work. It is not a list of everything M-Lab has published. It is a set of cases that show where the value came from: secondary use, joins with other data, reprocessing old raw data under better annotations, and public access that lets someone else ask a question no one planned for. The pattern is consistent. The value is rarely in the original test.
+This inventory collects examples of that work. It is not a list of everything M-Lab has published. It is a set of cases that show where the value came from: secondary use, joins with other data, reprocessing old raw data under better annotations, and public access that lets someone else ask a question no one planned for.
 
 ## Interconnection
 
