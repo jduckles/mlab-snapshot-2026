@@ -1,0 +1,942 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>What Internet Measurement Data Is
+For — M-Lab Snapshot 2026</title>
+  <meta name="description" content="An independent 2026 synthesis of what 15+ years of M-Lab's open Internet measurement record has been used to show.">
+  <meta name="author" content="Jonah Duckles">
+  <meta property="og:title" content="M-Lab Snapshot 2026">
+  <meta property="og:description" content="What 15+ years of open Internet measurement has been used to show — and where else the same record can go.">
+  <meta property="og:type" content="article">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <p class="kicker">Independent synthesis · 2026</p>
+    <h1 class="site-title">M-Lab Snapshot 2026</h1>
+    <p class="deck">What 15+ years of open Internet measurement has been used to show — and where else the same record can go.</p>
+    <p class="byline"><strong>By Jonah Duckles.</strong> I compiled this from 61 posts in M-Lab's blog archive, 2013–2026. It is an independent synthesis, offered back to the M-Lab community for reuse, correction, and expansion.</p>
+  </header>
+
+  <main>
+    <figure class="timeline" aria-labelledby="timeline-caption">
+      <div class="timeline-scroll">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 820" width="1000" height="820" role="img" aria-labelledby="mlabTitle mlabDesc">
+  <title id="mlabTitle">15+ years of open Internet measurement: seven evidence streams, 2013 to 2026</title>
+  <desc id="mlabDesc">A linked timeline of M-Lab's public measurement record. Seven horizontal clusters show how one open dataset has been reused for interconnection research, resilience monitoring, access policy, consumer protection, routing, protocol and platform evolution, and community-driven data reuse. Each milestone links to the underlying blog post. Marker shapes distinguish clusters. A bottom strip shows growth in test volume and global reach.</desc>
+  <style>
+    .title { font: 600 21px ui-sans-serif, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; fill: var(--fg, currentColor); }
+    .sub { font: 400 12.5px ui-sans-serif, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; fill: var(--muted, currentColor); }
+    .colhead { font: 600 9.5px ui-sans-serif, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; fill: var(--muted, currentColor); letter-spacing: .09em; }
+    .year { font: 500 10.8px ui-sans-serif, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; fill: var(--muted, currentColor); }
+    .cluster { font: 600 11.2px ui-sans-serif, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; fill: var(--fg, currentColor); }
+    .outcome { font: 400 9.4px ui-sans-serif, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; fill: var(--muted, currentColor); }
+    .node { font: 400 10.6px ui-sans-serif, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; fill: var(--fg, currentColor); }
+    .scale { font: 400 10.4px ui-sans-serif, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; fill: var(--muted, currentColor); }
+    .scaleStrong { font: 600 10.6px ui-sans-serif, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; fill: var(--fg, currentColor); }
+    .axis { stroke: var(--border, currentColor); stroke-width: 1; }
+    .lane { stroke: var(--border, currentColor); stroke-width: 1; opacity: .55; }
+    .tick { stroke: var(--border, currentColor); stroke-width: 1; opacity: .8; }
+    a.milestone,
+    a.milestone:link,
+    a.milestone:visited,
+    a.milestone:hover,
+    a.milestone:active {
+      color: var(--fg, currentColor);
+      text-decoration: none;
+    }
+    a.milestone text { color: inherit; }
+    .milestone { cursor: pointer; }
+    .milestone:hover { opacity: .72; }
+  </style>
+
+  <text class="title" x="24" y="34">15+ years of open Internet measurement</text>
+  <text class="sub" x="24" y="56">M-Lab's public record, 2009–2026</text>
+
+  <text class="colhead" x="24" y="80">CLUSTER</text>
+
+  <line class="axis" x1="182" y1="96" x2="982" y2="96"/>
+  <path d="M 982 96 l -7 -3.5 l 0 7 z" fill="var(--border, currentColor)"/>
+  <g class="year" text-anchor="middle">
+    <text x="210" y="88">2013</text>
+    <text x="269" y="88">2014</text>
+    <text x="327" y="88">2015</text>
+    <text x="386" y="88">2016</text>
+    <text x="444" y="88">2017</text>
+    <text x="503" y="88">2018</text>
+    <text x="561" y="88">2019</text>
+    <text x="620" y="88">2020</text>
+    <text x="678" y="88">2021</text>
+    <text x="737" y="88">2022</text>
+    <text x="795" y="88">2023</text>
+    <text x="854" y="88">2024</text>
+    <text x="912" y="88">2025</text>
+    <text x="970" y="88">2026</text>
+  </g>
+  <g class="tick">
+    <line x1="210" y1="96" x2="210" y2="101"/><line x1="269" y1="96" x2="269" y2="101"/>
+    <line x1="327" y1="96" x2="327" y2="101"/><line x1="386" y1="96" x2="386" y2="101"/>
+    <line x1="444" y1="96" x2="444" y2="101"/><line x1="503" y1="96" x2="503" y2="101"/>
+    <line x1="561" y1="96" x2="561" y2="101"/><line x1="620" y1="96" x2="620" y2="101"/>
+    <line x1="678" y1="96" x2="678" y2="101"/><line x1="737" y1="96" x2="737" y2="101"/>
+    <line x1="795" y1="96" x2="795" y2="101"/><line x1="854" y1="96" x2="854" y2="101"/>
+    <line x1="912" y1="96" x2="912" y2="101"/><line x1="970" y1="96" x2="970" y2="101"/>
+  </g>
+
+  <!-- Interconnection -->
+  <line class="lane" x1="170" y1="160" x2="982" y2="160"/>
+  <g fill="var(--c1, currentColor)"><text class="cluster" x="38" y="159">Interconnection</text></g>
+  <text class="outcome" x="38" y="173">Peering becomes observable</text>
+  <g transform="translate(28,156)"><g fill="var(--c1, currentColor)"><circle r="5"/><rect x="-7" y="-9" width="14" height="18" fill="transparent" stroke="none"/></g></g>
+  <a class="milestone" href="https://measurementlab.net/blog/2014_interconnection_report/" target="_blank" rel="noopener" aria-label="ISP Interconnection and its Impact on Consumer Internet Performance">
+    <title>ISP Interconnection and its Impact on Consumer Internet Performance</title>
+    <g transform="translate(269,160)"><g fill="var(--c1, currentColor)"><circle r="5"/><rect x="-7" y="-9" width="14" height="18" fill="transparent" stroke="none"/></g></g>
+    <text class="node" x="269" y="130" text-anchor="middle">Interconnection</text>
+    <text class="node" x="269" y="144" text-anchor="middle">report</text>
+  </a>
+  <a class="milestone" href="https://measurementlab.net/blog/interconnection_and_measurement_update/" target="_blank" rel="noopener" aria-label="New Opportunities for Test Deployment and Continued Analysis of Interconnection Performance">
+    <title>New Opportunities for Test Deployment and Continued Analysis of Interconnection Performance</title>
+    <g transform="translate(327,160)"><g fill="var(--c1, currentColor)"><circle r="5"/><rect x="-7" y="-9" width="14" height="18" fill="transparent" stroke="none"/></g></g>
+    <text class="node" x="327" y="182" text-anchor="middle">GTT/Tata</text>
+    <text class="node" x="327" y="196" text-anchor="middle">congestion</text>
+  </a>
+  <a class="milestone" href="https://measurementlab.net/blog/interconnection_update/" target="_blank" rel="noopener" aria-label="Monitoring Interconnection Performance Since the Open Internet Order">
+    <title>Monitoring Interconnection Performance Since the Open Internet Order</title>
+    <g transform="translate(444,160)"><g fill="var(--c1, currentColor)"><circle r="5"/><rect x="-7" y="-9" width="14" height="18" fill="transparent" stroke="none"/></g></g>
+    <text class="node" x="444" y="130" text-anchor="middle">Post-Order</text>
+    <text class="node" x="444" y="144" text-anchor="middle">decline</text>
+  </a>
+  <a class="milestone" href="https://measurementlab.net/blog/mlab-data-policy-advocacy/" target="_blank" rel="noopener" aria-label="Using M-Lab Data in Broadband Advocacy and Policy">
+    <title>Using M-Lab Data in Broadband Advocacy and Policy</title>
+    <g transform="translate(678,160)"><g fill="var(--c1, currentColor)"><circle r="5"/><rect x="-7" y="-9" width="14" height="18" fill="transparent" stroke="none"/></g></g>
+    <text class="node" x="678" y="130" text-anchor="middle">Usage guidance</text>
+  </a>
+  <!-- Resilience -->
+  <line class="lane" x1="170" y1="246" x2="982" y2="246"/>
+  <g fill="var(--c2, currentColor)"><text class="cluster" x="38" y="245">Resilience</text></g>
+  <text class="outcome" x="38" y="259">Slowdowns, not just outages</text>
+  <g transform="translate(28,242)"><g fill="var(--c2, currentColor)"><rect x="-4.5" y="-4.5" width="9" height="9" rx="1"/><rect x="-7" y="-9" width="14" height="18" fill="transparent" stroke="none"/></g></g>
+  <a class="milestone" href="https://measurementlab.net/blog/assessing_haiyans_impact/" target="_blank" rel="noopener" aria-label="Assessing Typhoon Haiyan&#x27;s impact on core Internet infrastructure">
+    <title>Assessing Typhoon Haiyan&#x27;s impact on core Internet infrastructure</title>
+    <g transform="translate(210,246)"><g fill="var(--c2, currentColor)"><rect x="-4.5" y="-4.5" width="9" height="9" rx="1"/><rect x="-7" y="-9" width="14" height="18" fill="transparent" stroke="none"/></g></g>
+    <text class="node" x="210" y="216" text-anchor="start">Typhoon Haiyan</text>
+  </a>
+  <a class="milestone" href="https://measurementlab.net/blog/covid19-test-rates-increase/" target="_blank" rel="noopener" aria-label="Changes Related to COVID-19">
+    <title>Changes Related to COVID-19</title>
+    <g transform="translate(620,246)"><g fill="var(--c2, currentColor)"><rect x="-4.5" y="-4.5" width="9" height="9" rx="1"/><rect x="-7" y="-9" width="14" height="18" fill="transparent" stroke="none"/></g></g>
+    <text class="node" x="620" y="216" text-anchor="middle">COVID demand</text>
+    <text class="node" x="620" y="230" text-anchor="middle">shock</text>
+  </a>
+  <a class="milestone" href="https://measurementlab.net/blog/hermes/" target="_blank" rel="noopener" aria-label="The Internet Can Be Up and Still Fail: Introducing HERMES">
+    <title>The Internet Can Be Up and Still Fail: Introducing HERMES</title>
+    <g transform="translate(854,246)"><g fill="var(--c2, currentColor)"><rect x="-4.5" y="-4.5" width="9" height="9" rx="1"/><rect x="-7" y="-9" width="14" height="18" fill="transparent" stroke="none"/></g></g>
+    <text class="node" x="854" y="216" text-anchor="middle">HERMES live</text>
+  </a>
+  <a class="milestone" href="https://measurementlab.net/blog/hermes/" target="_blank" rel="noopener" aria-label="HERMES: performance anomalies during floods and cable cuts">
+    <title>HERMES: performance anomalies during floods and cable cuts</title>
+    <g transform="translate(970,246)"><g fill="var(--c2, currentColor)"><rect x="-4.5" y="-4.5" width="9" height="9" rx="1"/><rect x="-7" y="-9" width="14" height="18" fill="transparent" stroke="none"/></g></g>
+    <text class="node" x="970" y="268" text-anchor="end">Floods &amp; cable cuts</text>
+  </a>
+  <!-- Access & policy -->
+  <line class="lane" x1="170" y1="332" x2="982" y2="332"/>
+  <g fill="var(--c3, currentColor)"><text class="cluster" x="38" y="331">Access &amp; policy</text></g>
+  <text class="outcome" x="38" y="345">Maps become budgets</text>
+  <g transform="translate(28,328)"><g fill="var(--c3, currentColor)"><path d="M0 -6 L7 0 L0 6 L-7 0 Z"/><rect x="-7" y="-9" width="14" height="18" fill="transparent" stroke="none"/></g></g>
+  <a class="milestone" href="https://measurementlab.net/blog/communities-driving-broadband-mapping/" target="_blank" rel="noopener" aria-label="Local Communities are Driving Broadband Speed Mapping in the US">
+    <title>Local Communities are Driving Broadband Speed Mapping in the US</title>
+    <g transform="translate(561,332)"><g fill="var(--c3, currentColor)"><path d="M0 -6 L7 0 L0 6 L-7 0 Z"/><rect x="-7" y="-9" width="14" height="18" fill="transparent" stroke="none"/></g></g>
+    <text class="node" x="561" y="302" text-anchor="middle">Louisville /</text>
+    <text class="node" x="561" y="316" text-anchor="middle">Michigan</text>
+  </a>
+  <a class="milestone" href="https://measurementlab.net/blog/exploring-geographic-limits-of-ip-geolocation/" target="_blank" rel="noopener" aria-label="Exploring NDT Data by Geography in Baltimore City">
+    <title>Exploring NDT Data by Geography in Baltimore City</title>
+    <g transform="translate(620,332)"><g fill="var(--c3, currentColor)"><path d="M0 -6 L7 0 L0 6 L-7 0 Z"/><rect x="-7" y="-9" width="14" height="18" fill="transparent" stroke="none"/></g></g>
+    <text class="node" x="620" y="354" text-anchor="middle">Baltimore limits</text>
+  </a>
+  <a class="milestone" href="https://measurementlab.net/blog/ntia/" target="_blank" rel="noopener" aria-label="NDT Data in NTIA Indicators of Broadband Need">
+    <title>NDT Data in NTIA Indicators of Broadband Need</title>
+    <g transform="translate(678,332)"><g fill="var(--c3, currentColor)"><path d="M0 -6 L7 0 L0 6 L-7 0 Z"/><rect x="-7" y="-9" width="14" height="18" fill="transparent" stroke="none"/></g></g>
+    <text class="node" x="678" y="302" text-anchor="middle">NTIA county</text>
+    <text class="node" x="678" y="316" text-anchor="middle">maps</text>
+  </a>
+  <a class="milestone" href="https://measurementlab.net/blog/iqb/" target="_blank" rel="noopener" aria-label="Measurement Lab publishes the Internet Quality Barometer Framework">
+    <title>Measurement Lab publishes the Internet Quality Barometer Framework</title>
+    <g transform="translate(854,332)"><g fill="var(--c3, currentColor)"><path d="M0 -6 L7 0 L0 6 L-7 0 Z"/><rect x="-7" y="-9" width="14" height="18" fill="transparent" stroke="none"/></g></g>
+    <text class="node" x="854" y="302" text-anchor="middle">IQB framework</text>
+  </a>
+  <a class="milestone" href="https://measurementlab.net/blog/cop-may-meeting/" target="_blank" rel="noopener" aria-label="Connectivity CoP — May Session Recap: IQB-Edu">
+    <title>Connectivity CoP — May Session Recap: IQB-Edu</title>
+    <g transform="translate(970,332)"><g fill="var(--c3, currentColor)"><path d="M0 -6 L7 0 L0 6 L-7 0 Z"/><rect x="-7" y="-9" width="14" height="18" fill="transparent" stroke="none"/></g></g>
+    <text class="node" x="970" y="302" text-anchor="end">IQB-Edu</text>
+  </a>
+  <!-- Consumer protection -->
+  <line class="lane" x1="170" y1="418" x2="982" y2="418"/>
+  <g fill="var(--c4, currentColor)"><text class="cluster" x="38" y="417">Consumer protection</text></g>
+  <text class="outcome" x="38" y="431">Throttling becomes evidence</text>
+  <g transform="translate(28,414)"><g fill="var(--c4, currentColor)"><path d="M0 -6 L6 5 L-6 5 Z"/><rect x="-7" y="-9" width="14" height="18" fill="transparent" stroke="none"/></g></g>
+  <a class="milestone" href="https://measurementlab.net/blog/wehe-launch/" target="_blank" rel="noopener" aria-label="Wehe Measurement Service Launched on M-Lab Platform">
+    <title>Wehe Measurement Service Launched on M-Lab Platform</title>
+    <g transform="translate(620,418)"><g fill="var(--c4, currentColor)"><path d="M0 -6 L6 5 L-6 5 Z"/><rect x="-7" y="-9" width="14" height="18" fill="transparent" stroke="none"/></g></g>
+    <text class="node" x="620" y="388" text-anchor="middle">Wehe on M-Lab</text>
+  </a>
+  <a class="milestone" href="https://measurementlab.net/blog/wehe-launch/" target="_blank" rel="noopener" aria-label="Wehe Measurement Service Launched on M-Lab Platform">
+    <title>Wehe Measurement Service Launched on M-Lab Platform</title>
+    <g transform="translate(678,418)"><g fill="var(--c4, currentColor)"><path d="M0 -6 L6 5 L-6 5 Z"/><rect x="-7" y="-9" width="14" height="18" fill="transparent" stroke="none"/></g></g>
+    <text class="node" x="678" y="440" text-anchor="middle">Arcep adopts</text>
+  </a>
+  <a class="milestone" href="https://measurementlab.net/blog/wehe-bigquery-announcement/" target="_blank" rel="noopener" aria-label="Wehe data is now available in BigQuery">
+    <title>Wehe data is now available in BigQuery</title>
+    <g transform="translate(795,418)"><g fill="var(--c4, currentColor)"><path d="M0 -6 L6 5 L-6 5 Z"/><rect x="-7" y="-9" width="14" height="18" fill="transparent" stroke="none"/></g></g>
+    <text class="node" x="795" y="388" text-anchor="middle">Wehe + AIM</text>
+    <text class="node" x="795" y="402" text-anchor="middle">data</text>
+  </a>
+  <!-- Routing & paths -->
+  <line class="lane" x1="170" y1="504" x2="982" y2="504"/>
+  <g fill="var(--c5, currentColor)"><text class="cluster" x="38" y="503">Routing &amp; paths</text></g>
+  <text class="outcome" x="38" y="517">Paths become geography</text>
+  <g transform="translate(28,500)"><g fill="var(--c5, currentColor)"><path d="M-6 -5 L6 -5 L0 6 Z"/><rect x="-7" y="-9" width="14" height="18" fill="transparent" stroke="none"/></g></g>
+  <a class="milestone" href="https://measurementlab.net/blog/pt-bug/" target="_blank" rel="noopener" aria-label="Paris Traceroute has a bug, and it causes some bad data">
+    <title>Paris Traceroute has a bug, and it causes some bad data</title>
+    <g transform="translate(503,504)"><g fill="var(--c5, currentColor)"><path d="M-6 -5 L6 -5 L0 6 Z"/><rect x="-7" y="-9" width="14" height="18" fill="transparent" stroke="none"/></g></g>
+    <text class="node" x="503" y="474" text-anchor="middle">Traceroute bug</text>
+  </a>
+  <a class="milestone" href="https://measurementlab.net/blog/scamper-data/" target="_blank" rel="noopener" aria-label="New Traceroute Binary on M-Lab platform">
+    <title>New Traceroute Binary on M-Lab platform</title>
+    <g transform="translate(561,504)"><g fill="var(--c5, currentColor)"><path d="M-6 -5 L6 -5 L0 6 Z"/><rect x="-7" y="-9" width="14" height="18" fill="transparent" stroke="none"/></g></g>
+    <text class="node" x="561" y="526" text-anchor="middle">scamper at scale</text>
+  </a>
+  <a class="milestone" href="https://measurementlab.net/blog/overview-of-mlab-traceroute/" target="_blank" rel="noopener" aria-label="An Overview of M-Lab&#x27;s Traceroute Data">
+    <title>An Overview of M-Lab&#x27;s Traceroute Data</title>
+    <g transform="translate(737,504)"><g fill="var(--c5, currentColor)"><path d="M-6 -5 L6 -5 L0 6 Z"/><rect x="-7" y="-9" width="14" height="18" fill="transparent" stroke="none"/></g></g>
+    <text class="node" x="737" y="474" text-anchor="middle">14M paths/day</text>
+  </a>
+  <a class="milestone" href="https://measurementlab.net/blog/end-of-year-letter-2023/" target="_blank" rel="noopener" aria-label="2023 Year in Review: reverse traceroute data">
+    <title>2023 Year in Review: reverse traceroute data</title>
+    <g transform="translate(795,504)"><g fill="var(--c5, currentColor)"><path d="M-6 -5 L6 -5 L0 6 Z"/><rect x="-7" y="-9" width="14" height="18" fill="transparent" stroke="none"/></g></g>
+    <text class="node" x="795" y="526" text-anchor="middle">Reverse paths</text>
+  </a>
+  <a class="milestone" href="https://measurementlab.net/blog/iprs-data-on-mlab/" target="_blank" rel="noopener" aria-label="IP Route Survey data published in M-Lab">
+    <title>IP Route Survey data published in M-Lab</title>
+    <g transform="translate(912,504)"><g fill="var(--c5, currentColor)"><path d="M-6 -5 L6 -5 L0 6 Z"/><rect x="-7" y="-9" width="14" height="18" fill="transparent" stroke="none"/></g></g>
+    <text class="node" x="912" y="474" text-anchor="middle">IPRS routes</text>
+  </a>
+  <!-- Protocols & platform -->
+  <line class="lane" x1="170" y1="590" x2="982" y2="590"/>
+  <g fill="var(--c6, currentColor)"><text class="cluster" x="38" y="589">Protocols &amp; platform</text></g>
+  <text class="outcome" x="38" y="603">The instrument evolves</text>
+  <g transform="translate(28,586)"><g fill="var(--c6, currentColor)"><path d="M0 -6 L5.2 -3 L5.2 3 L0 6 L-5.2 3 L-5.2 -3 Z"/><rect x="-7" y="-9" width="14" height="18" fill="transparent" stroke="none"/></g></g>
+  <a class="milestone" href="https://measurementlab.net/blog/tcp-and-bbr/" target="_blank" rel="noopener" aria-label="BBR TCP and Measurement Lab">
+    <title>BBR TCP and Measurement Lab</title>
+    <g transform="translate(386,590)"><g fill="var(--c6, currentColor)"><path d="M0 -6 L5.2 -3 L5.2 3 L0 6 L-5.2 3 L-5.2 -3 Z"/><rect x="-7" y="-9" width="14" height="18" fill="transparent" stroke="none"/></g></g>
+    <text class="node" x="386" y="560" text-anchor="middle">BBR</text>
+  </a>
+  <a class="milestone" href="https://measurementlab.net/blog/the-platform-has-landed/" target="_blank" rel="noopener" aria-label="The 2.0 Platform Has Landed">
+    <title>The 2.0 Platform Has Landed</title>
+    <g transform="translate(561,590)"><g fill="var(--c6, currentColor)"><path d="M0 -6 L5.2 -3 L5.2 3 L0 6 L-5.2 3 L-5.2 -3 Z"/><rect x="-7" y="-9" width="14" height="18" fill="transparent" stroke="none"/></g></g>
+    <text class="node" x="561" y="560" text-anchor="middle">2.0 platform</text>
+  </a>
+  <a class="milestone" href="https://measurementlab.net/blog/evolution-of-ndt/" target="_blank" rel="noopener" aria-label="Evolution of NDT">
+    <title>Evolution of NDT</title>
+    <g transform="translate(620,590)"><g fill="var(--c6, currentColor)"><path d="M0 -6 L5.2 -3 L5.2 3 L0 6 L-5.2 3 L-5.2 -3 Z"/><rect x="-7" y="-9" width="14" height="18" fill="transparent" stroke="none"/></g></g>
+    <text class="node" x="620" y="612" text-anchor="middle">ndt7 rollout</text>
+  </a>
+  <a class="milestone" href="https://measurementlab.net/blog/2022-mlab-to-the-cloud/" target="_blank" rel="noopener" aria-label="M-Lab to the Cloud">
+    <title>M-Lab to the Cloud</title>
+    <g transform="translate(737,590)"><g fill="var(--c6, currentColor)"><path d="M0 -6 L5.2 -3 L5.2 3 L0 6 L-5.2 3 L-5.2 -3 Z"/><rect x="-7" y="-9" width="14" height="18" fill="transparent" stroke="none"/></g></g>
+    <text class="node" x="737" y="560" text-anchor="middle">Cloud sites</text>
+  </a>
+  <a class="milestone" href="https://measurementlab.net/blog/introducing-msak/" target="_blank" rel="noopener" aria-label="Introducing MSAK (Measurement Swiss-Army Knife)">
+    <title>Introducing MSAK (Measurement Swiss-Army Knife)</title>
+    <g transform="translate(795,590)"><g fill="var(--c6, currentColor)"><path d="M0 -6 L5.2 -3 L5.2 3 L0 6 L-5.2 3 L-5.2 -3 Z"/><rect x="-7" y="-9" width="14" height="18" fill="transparent" stroke="none"/></g></g>
+    <text class="node" x="795" y="612" text-anchor="middle">MSAK / data caps</text>
+  </a>
+  <a class="milestone" href="https://measurementlab.net/blog/dynamic-data-bq/" target="_blank" rel="noopener" aria-label="Measurement Lab publishes new dataset of NDT7 measurements">
+    <title>Measurement Lab publishes new dataset of NDT7 measurements</title>
+    <g transform="translate(912,590)"><g fill="var(--c6, currentColor)"><path d="M0 -6 L5.2 -3 L5.2 3 L0 6 L-5.2 3 L-5.2 -3 Z"/><rect x="-7" y="-9" width="14" height="18" fill="transparent" stroke="none"/></g></g>
+    <text class="node" x="912" y="560" text-anchor="middle">Dynamic fleet</text>
+  </a>
+  <!-- Open data & community -->
+  <line class="lane" x1="170" y1="676" x2="982" y2="676"/>
+  <g fill="var(--accent, currentColor)"><text class="cluster" x="38" y="675">Open data &amp; community</text></g>
+  <text class="outcome" x="38" y="689">Reuse becomes routine</text>
+  <g transform="translate(28,672)"><g fill="none" stroke="var(--accent, currentColor)" stroke-width="2.2"><circle r="4.6"/><rect x="-7" y="-9" width="14" height="18" fill="transparent" stroke="none"/></g></g>
+  <a class="milestone" href="https://measurementlab.net/blog/ripestat_mlab_widgets/" target="_blank" rel="noopener" aria-label="Explore M-Lab data using the new RIPEstat widgets">
+    <title>Explore M-Lab data using the new RIPEstat widgets</title>
+    <g transform="translate(210,676)"><g fill="none" stroke="var(--accent, currentColor)" stroke-width="2.2"><circle r="4.6"/><rect x="-7" y="-9" width="14" height="18" fill="transparent" stroke="none"/></g></g>
+    <text class="node" x="210" y="646" text-anchor="start">RIPEstat widgets</text>
+  </a>
+  <a class="milestone" href="https://measurementlab.net/blog/new-tables-release/" target="_blank" rel="noopener" aria-label="Making it Easier to Use M-Lab Data">
+    <title>Making it Easier to Use M-Lab Data</title>
+    <g transform="translate(386,676)"><g fill="none" stroke="var(--accent, currentColor)" stroke-width="2.2"><circle r="4.6"/><rect x="-7" y="-9" width="14" height="18" fill="transparent" stroke="none"/></g></g>
+    <text class="node" x="386" y="646" text-anchor="middle">BigQuery 8 sec</text>
+  </a>
+  <a class="milestone" href="https://measurementlab.net/blog/celebrating-2billion-ndt-tests/" target="_blank" rel="noopener" aria-label="NDT Dataset: 2 Billion Rows and Growing">
+    <title>NDT Dataset: 2 Billion Rows and Growing</title>
+    <g transform="translate(561,676)"><g fill="none" stroke="var(--accent, currentColor)" stroke-width="2.2"><circle r="4.6"/><rect x="-7" y="-9" width="14" height="18" fill="transparent" stroke="none"/></g></g>
+    <text class="node" x="561" y="646" text-anchor="middle">2B tests</text>
+  </a>
+  <a class="milestone" href="https://measurementlab.net/blog/murakami/" target="_blank" rel="noopener" aria-label="M-Lab&#x27;s Murakami Tool">
+    <title>M-Lab&#x27;s Murakami Tool</title>
+    <g transform="translate(678,676)"><g fill="none" stroke="var(--accent, currentColor)" stroke-width="2.2"><circle r="4.6"/><rect x="-7" y="-9" width="14" height="18" fill="transparent" stroke="none"/></g></g>
+    <text class="node" x="678" y="646" text-anchor="middle">Murakami</text>
+  </a>
+  <a class="milestone" href="https://measurementlab.net/blog/research-fellow-announcement/" target="_blank" rel="noopener" aria-label="M-Lab Research Fellows - Spring 2022">
+    <title>M-Lab Research Fellows - Spring 2022</title>
+    <g transform="translate(737,676)"><g fill="none" stroke="var(--accent, currentColor)" stroke-width="2.2"><circle r="4.6"/><rect x="-7" y="-9" width="14" height="18" fill="transparent" stroke="none"/></g></g>
+    <text class="node" x="737" y="698" text-anchor="middle">Fellows /</text>
+    <text class="node" x="737" y="712" text-anchor="middle">hackathons</text>
+  </a>
+  <a class="milestone" href="https://measurementlab.net/blog/open-measurement-gathering-1/" target="_blank" rel="noopener" aria-label="M-Lab Organizes and Participates in the First Open Measurement Gathering">
+    <title>M-Lab Organizes and Participates in the First Open Measurement Gathering</title>
+    <g transform="translate(854,676)"><g fill="none" stroke="var(--accent, currentColor)" stroke-width="2.2"><circle r="4.6"/><rect x="-7" y="-9" width="14" height="18" fill="transparent" stroke="none"/></g></g>
+    <text class="node" x="854" y="646" text-anchor="middle">Open Measurement</text>
+    <text class="node" x="854" y="660" text-anchor="middle">Gatherings</text>
+  </a>
+  <a class="milestone" href="https://measurementlab.net/blog/cop-launch/" target="_blank" rel="noopener" aria-label="Connectivity Community of Practice Launch">
+    <title>Connectivity Community of Practice Launch</title>
+    <g transform="translate(970,676)"><g fill="none" stroke="var(--accent, currentColor)" stroke-width="2.2"><circle r="4.6"/><rect x="-7" y="-9" width="14" height="18" fill="transparent" stroke="none"/></g></g>
+    <text class="node" x="970" y="646" text-anchor="end">Giga CoP</text>
+  </a>
+
+  <!-- Scale and reach -->
+  <line class="axis" x1="24" y1="730" x2="976" y2="730" opacity=".55"/>
+  <text class="cluster" x="24" y="752">Scale &amp; reach</text>
+  <text class="outcome" x="24" y="766">the record compounds</text>
+  <line class="lane" x1="182" y1="786" x2="978" y2="786"/>
+
+  <a class="milestone" href="https://measurementlab.net/blog/celebrating-2billion-ndt-tests/" target="_blank" rel="noopener" aria-label="NDT Dataset: 2 Billion Rows and Growing">
+    <title>NDT Dataset: 2 Billion Rows and Growing</title>
+    <g transform="translate(327,786)"><circle r="3.5" fill="var(--fg, currentColor)"/><rect x="-6" y="-8" width="12" height="16" fill="transparent" stroke="none"/></g>
+    <text class="scale" x="327" y="776" text-anchor="middle">50k tests/day</text>
+  </a>
+  <a class="milestone" href="https://measurementlab.net/blog/celebrating-2billion-ndt-tests/" target="_blank" rel="noopener" aria-label="NDT Dataset: 2 Billion Rows and Growing">
+    <title>NDT Dataset: 2 Billion Rows and Growing</title>
+    <g transform="translate(444,786)"><circle r="3.5" fill="var(--fg, currentColor)"/><rect x="-6" y="-8" width="12" height="16" fill="transparent" stroke="none"/></g>
+    <text class="scale" x="444" y="776" text-anchor="middle">1M/day</text>
+  </a>
+  <a class="milestone" href="https://measurementlab.net/blog/celebrating-2billion-ndt-tests/" target="_blank" rel="noopener" aria-label="NDT Dataset: 2 Billion Rows and Growing">
+    <title>NDT Dataset: 2 Billion Rows and Growing</title>
+    <g transform="translate(561,786)"><circle r="3.5" fill="var(--fg, currentColor)"/><rect x="-6" y="-8" width="12" height="16" fill="transparent" stroke="none"/></g>
+    <text class="scaleStrong" x="561" y="776" text-anchor="middle">3M+/day</text>
+    <text class="scale" x="561" y="806" text-anchor="middle">2B cumulative</text>
+  </a>
+  <a class="milestone" href="https://measurementlab.net/blog/hermes/" target="_blank" rel="noopener" aria-label="HERMES: 4 billion tests over five months">
+    <title>HERMES: 4 billion tests over five months</title>
+    <g transform="translate(854,786)"><circle r="3.5" fill="var(--fg, currentColor)"/><rect x="-6" y="-8" width="12" height="16" fill="transparent" stroke="none"/></g>
+    <text class="scaleStrong" x="854" y="776" text-anchor="middle">4B tests in 5 months</text>
+  </a>
+  <a class="milestone" href="https://measurementlab.net/blog/dynamic-data-bq/" target="_blank" rel="noopener" aria-label="Measurement Lab publishes new dataset of NDT7 measurements">
+    <title>Measurement Lab publishes new dataset of NDT7 measurements</title>
+    <g transform="translate(970,786)"><circle r="3.5" fill="var(--fg, currentColor)"/><rect x="-6" y="-8" width="12" height="16" fill="transparent" stroke="none"/></g>
+    <text class="scale" x="970" y="806" text-anchor="end">400+ servers · 100 metros · 40+ countries</text>
+  </a>
+</svg>
+      </div>
+      <figcaption id="timeline-caption">Seven reuse clusters, 2013–2026. Each marker links to the underlying post on measurementlab.net.</figcaption>
+    </figure>
+
+    <div class="page-grid">
+      <aside class="toc" aria-label="Contents">
+        <p class="toc-label">Contents</p>
+        <nav aria-label="Table of contents">
+          <ul>
+          <li><a href="#what-internet-measurement-data-is-for"
+          id="toc-what-internet-measurement-data-is-for">What Internet
+          Measurement Data Is For</a>
+          <ul>
+          <li><a href="#interconnection"
+          id="toc-interconnection">Interconnection</a></li>
+          <li><a href="#resilience"
+          id="toc-resilience">Resilience</a></li>
+          <li><a href="#demand-shocks" id="toc-demand-shocks">Demand
+          shocks</a></li>
+          <li><a href="#access-and-policy"
+          id="toc-access-and-policy">Access and policy</a></li>
+          <li><a href="#consumer-protection"
+          id="toc-consumer-protection">Consumer protection</a></li>
+          <li><a href="#routing" id="toc-routing">Routing</a></li>
+          <li><a href="#protocols-and-platform"
+          id="toc-protocols-and-platform">Protocols and
+          platform</a></li>
+          <li><a href="#the-instrument-as-evidence"
+          id="toc-the-instrument-as-evidence">The instrument as
+          evidence</a></li>
+          <li><a href="#from-speed-to-quality"
+          id="toc-from-speed-to-quality">From speed to quality</a></li>
+          <li><a href="#the-infrastructure-of-reuse"
+          id="toc-the-infrastructure-of-reuse">The infrastructure of
+          reuse</a></li>
+          <li><a href="#the-inventory-compressed"
+          id="toc-the-inventory-compressed">The inventory,
+          compressed</a></li>
+          </ul></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <article class="prose">
+        <h1 id="what-internet-measurement-data-is-for">What Internet
+        Measurement Data Is For</h1>
+        <p><em>An annotated inventory of reuse in M-Lab’s public record,
+        2013–2026</em></p>
+        <p>A speed test answers a narrow question: how fast can this
+        connection move data right now? The record it leaves behind can
+        answer other questions. It includes throughput, latency, loss,
+        the addresses at both ends, the path between them, and the
+        conditions under which the test ran. Aggregated over millions of
+        tests and fifteen years, that record becomes evidence about
+        peering, disasters, pandemic demand, school connectivity,
+        protocol design, regulation, and the measurement system
+        itself.</p>
+        <p>This inventory collects examples of that reuse. It is not a
+        list of everything M-Lab has published. It is a set of cases
+        that show where the value came from: secondary use, joins with
+        other data, reprocessing old raw data under better annotations,
+        and public access that lets someone else ask a question no one
+        planned for. The pattern is consistent. The value is rarely in
+        the original test.</p>
+        <h2 id="interconnection">Interconnection</h2>
+        <p>The first large use of the record was interconnection. A
+        long-running collaborative study used years of NDT measurements
+        to compare access ISPs and transit providers. Consumers of
+        AT&amp;T, Comcast, CenturyLink, Time Warner Cable, and Verizon
+        saw degraded throughput, higher latency, and more loss across
+        particular access/transit pairs involving Cogent, Level 3, and
+        XO. The degradation was concentrated in peak hours and appeared
+        in multiple cities at the same time (<a
+        href="https://measurementlab.net/blog/2014_interconnection_report/">ISP
+        Interconnection and its Impact on Consumer Internet
+        Performance</a>).</p>
+        <p>The follow-up work made the method plain. Compare an access
+        ISP’s performance across multiple transit paths in the same
+        metro, at the same time of day, and look for a persistent gap
+        (<a
+        href="https://measurementlab.net/blog/interconnection_and_measurement_update/">New
+        Opportunities for Test Deployment and Continued Analysis of
+        Interconnection Performance</a>). AT&amp;T customers over GTT in
+        Chicago and Atlanta often saw peak-hour throughput below 0.1
+        Mbps while Comcast customers to the same sites did not.
+        CenturyLink over Tata in Seattle fell below 1 Mbps while Cogent
+        paths were healthy.</p>
+        <p>The most useful finding came from raw packet traces, not
+        summary statistics. A sharp recovery across all affected access
+        ISPs in February 2014 coincided with a change in the IP
+        Type-of-Service marking on incoming packets: roughly a tenth of
+        sampled measurements in early February, 30% by February 20, and
+        about 94% five days later. Throughput rose at the same time (<a
+        href="https://measurementlab.net/blog/research_update1/">Research
+        Updates: Beginning to Observe Network Management Practices as a
+        Third Party</a>). The data could not establish who changed the
+        marking or why. It did show that a performance time series could
+        raise a specific question about network management.</p>
+        <p>A later reanalysis found that detectable congestion episodes
+        declined after the 2015 Open Internet Order. Published
+        interconnection agreements between Verizon and Level 3, and
+        AT&amp;T and GTT, were followed within days by measurable
+        restoration (<a
+        href="https://measurementlab.net/blog/interconnection_update/">Monitoring
+        Interconnection Performance Since the Open Internet Order</a>).
+        The causal caution still applies. Measurement can establish
+        association and timing. It cannot establish intent or
+        responsibility. That is enough to make a market observable.</p>
+        <h2 id="resilience">Resilience</h2>
+        <p>Most Internet failures are not outages. A network can stay
+        reachable while latency rises or throughput collapses. HERMES
+        was built to find those events in ordinary speed tests. It
+        groups tests by access network, metro, and destination, compares
+        each group with its recent baseline, and uses forward and
+        reverse paths to localize the shared segment (<a
+        href="https://measurementlab.net/blog/hermes/">The Internet Can
+        Be Up and Still Fail: Introducing HERMES</a>).</p>
+        <p>On 4 July 2024, Cogent users in Chicago testing to a
+        Tata-hosted M-Lab server saw round-trip latency rise by more
+        than 210 ms. The server-to-user path detoured through Texas,
+        which explained about 30 ms. Reverse traceroutes showed the
+        return path going through Singapore, which explained most of the
+        rest. The usual Chicago–New York interconnection was absent. The
+        public observatories we checked did not report the event. A
+        Reddit thread with more than 100 comments did.</p>
+        <p>At scale, HERMES analyzed about 4 billion tests over five
+        months and found roughly 65,000 performance events across 16,000
+        cities, 9,710 networks, and 166 countries. A denser cloud
+        monitoring reimplementation detected 91.4% of the same events
+        and agreed on the implicated segment 94.5% of the time. HERMES
+        found 25 of 27 documented provider incidents, and about ten
+        times as many publicly discussed problems as the public
+        observatories in the same comparison. Half of the implicated
+        links could only be identified by looking in both
+        directions.</p>
+        <p>The same method turned a flood into a resilience map. During
+        the September 2024 Andhra Pradesh flooding, the share of
+        monitored networks with anomalies rose sharply near the flooded
+        region and spread into neighboring areas, consistent with
+        traffic rerouting onto shared fallback paths. Earlier, a
+        different event produced a similar lesson. After Typhoon Haiyan,
+        RIPE NCC researchers used open measurement data to conclude that
+        damage to the Philippines’ core infrastructure was moderate and
+        localized (<a
+        href="https://measurementlab.net/blog/assessing_haiyans_impact/">Assessing
+        Typhoon Haiyan’s impact on core Internet
+        infrastructure</a>).</p>
+        <h2 id="demand-shocks">Demand shocks</h2>
+        <p>COVID-19 created a demand shock no one designed. Within three
+        weeks in March 2020, M-Lab’s global NDT test rate rose from
+        about 3,000 to over 7,000 tests per minute. In New York,
+        interactive browser tests tripled while automated tests stayed
+        flat, and median interactive download throughput fell 5–10 Mbps.
+        In São Paulo, peak-hour medians fell from about 4 Mbps to 2 Mbps
+        (<a
+        href="https://measurementlab.net/blog/covid19-test-rates-increase/">Changes
+        Related to COVID-19</a>).</p>
+        <p>The automated cohort acted as a stable comparison. Its volume
+        and client population did not change, and its median performance
+        stayed flat while interactive performance fell. Publishing the
+        dashboards alongside the analysis made the same data usable by
+        people who do not write SQL (<a
+        href="https://measurementlab.net/blog/datastudio-covid19-test-rates-increase/">How
+        Measurement Lab’s Open Data can be used during COVID-19</a>, <a
+        href="https://measurementlab.net/blog/covid-19-response-dashboards/">Accessible
+        M-Lab NDT data for Internet Performance research during
+        COVID-19</a>).</p>
+        <p>Northern Italy gave a cleaner before/during/after account.
+        OONI and M-Lab found more than double the pre-pandemic volume of
+        NDT tests after the lockdown began, reduced download and upload
+        speeds through March–May 2020, and recovery to pre-lockdown
+        levels as restrictions lifted (<a
+        href="https://measurementlab.net/blog/measurement-observations-on-network-performance-during-the-COVID-19-pandemic-in-Northern-Italy/">Measurement
+        Observations on Network Performance During the COVID-19 Pandemic
+        in Northern Italy</a>). The authors were explicit that the data
+        shows correlation, that single tests cannot characterize a
+        network, and that user-initiated tests carry self-selection
+        bias. Those caveats are part of the method, not a weakness of
+        the dataset.</p>
+        <h2 id="access-and-policy">Access and policy</h2>
+        <p>Measurement data changes decisions when it reaches a budget.
+        Louisville integrated NDT into a city speed-test site and used
+        the aggregated results to direct part of its fiber buildout
+        funding toward underserved areas (<a
+        href="https://measurementlab.net/blog/communities-driving-broadband-mapping/">Local
+        Communities are Driving Broadband Speed Mapping in the US</a>).
+        Michigan’s Moonshot pilot, built with Merit and Michigan State’s
+        Quello Center, sent students home with a measurement assignment
+        to document the homework gap. More than 360,000 rural Michigan
+        homes and 27% of K–12 students lacked home broadband (<a
+        href="https://measurementlab.net/blog/michigan-moonshot/">Michigan
+        Moonshot Data Collection Pilot Project Launches</a>).</p>
+        <p>The same pattern works at the scale of a single institution.
+        Murakami devices in U.S. public libraries produced repeated,
+        location-known measurements rather than anonymous crowdsourced
+        ones (<a
+        href="https://measurementlab.net/blog/murakami/">M-Lab’s
+        Murakami Tool</a>). A measurement computer installed with the
+        Nation of Hawai’i was used to confirm that the community
+        received the service it was promised (<a
+        href="https://measurementlab.net/blog/supporting-internet-self-determination-at-the-2019-indigenous-connectivity-summit/">Supporting
+        Internet Self Determination at the 2019 Indigenous Connectivity
+        Summit</a>).</p>
+        <p>The federal layer shows both the power and the trap. NTIA’s
+        Indicators of Broadband Need added M-Lab county medians to a map
+        that already contained FCC Form 477 advertised speeds, Ookla
+        measurements, and Microsoft application-level telemetry. These
+        are four different instruments measuring four different things
+        under one visual vocabulary (<a
+        href="https://measurementlab.net/blog/ntia/">NDT Data in NTIA
+        Indicators of Broadband Need</a>).</p>
+        <p>Louisville and Michigan are the payoff. Baltimore is the
+        caution. There, city-wide NDT data collapsed to only 50 distinct
+        latitude/longitude points, and the author’s own three home
+        addresses geolocated outside the neighborhood. Community-area
+        medians looked nearly identical because the underlying points
+        did not resolve to communities (<a
+        href="https://measurementlab.net/blog/exploring-geographic-limits-of-ip-geolocation/">Exploring
+        NDT Data by Geography in Baltimore City</a>). Geographic
+        precision is a property of the collection design, not a property
+        of the dataset. Local collection, premise devices, and
+        volunteered location recover what IP annotation cannot.</p>
+        <p>The aggregation problem is just as concrete. In one Maryland
+        postal code, an all-provider weighted average concealed Comcast
+        users pulling the number up and two mobile, two satellite, one
+        cable, and one business ISP pulling it down. The all-provider
+        NDT average was 72.9/9.7 Mbps. The Ookla average for the same
+        place was 293/11.65 Mbps (<a
+        href="https://measurementlab.net/blog/arc-research-pt2/">ARC of
+        Research pt. 2: Exploring Data Sources Relevant to Our
+        Questions</a>). The earlier installment argued that the question
+        determines the instrument: on-net multi-stream tests for
+        advertised access-link speeds, off-net single-stream tests for
+        the path beyond the last mile (<a
+        href="https://measurementlab.net/blog/arc-of-research-pt1/">ARC
+        of Research pt. 1: Asking the Right Questions</a>).</p>
+        <p>The policy recommendations follow from this. Aggregate by
+        ISP, separate peak and off-peak, use histograms and log scales,
+        and correct for client bias and population drift (<a
+        href="https://measurementlab.net/blog/mlab-data-policy-advocacy/">Using
+        M-Lab Data in Broadband Advocacy and Policy</a>). A proposal
+        that promises conclusions without these disciplines will produce
+        confident, wrong maps.</p>
+        <h2 id="consumer-protection">Consumer protection</h2>
+        <p>Wehe turns a user’s device into a differential-treatment
+        detector. It replays captured traffic from a real application,
+        then replays the same traffic with inverted content that no
+        classifier should recognize, and compares the results (<a
+        href="https://measurementlab.net/blog/wehe-launch/">Wehe
+        Measurement Service Launched on M-Lab Platform</a>). France’s
+        Arcep adopted it as an official tool. By the time of the launch
+        post, close to 145,000 tests had been run in France with no
+        differentiation detected.</p>
+        <p>Publishing Wehe data in BigQuery turned a consumer app into a
+        longitudinal regulatory dataset. Researchers can ask which ISPs
+        differentiate, which applications are affected, how throttling
+        is implemented, and whether a practice tracks overload or
+        persists all day across a country (<a
+        href="https://measurementlab.net/blog/wehe-bigquery-announcement/">Wehe
+        data is now available in BigQuery</a>). Cloudflare’s AIM data
+        added a complementary end-user vocabulary—bandwidth, jitter,
+        responsiveness—and published every test’s score rather than only
+        a summary (<a
+        href="https://measurementlab.net/blog/cloudflare-aimscoredata-announcement/">M-Lab
+        is now providing Cloudflare AIM data for open access</a>).</p>
+        <p>The 2022 fellowships pushed the work from detection toward
+        explanation. One project correlated NDT anomalies with BGP
+        control-plane events. Another extended Wehe to localize where
+        differentiation occurs. A third studied how to infer quality of
+        experience from active and passive measurements (<a
+        href="https://measurementlab.net/blog/research-fellow-announcement/">M-Lab
+        Research Fellows - Spring 2022</a>).</p>
+        <h2 id="routing">Routing</h2>
+        <p>Traceroutes record the path a connection takes. M-Lab
+        generates about 14 million traceroutes per day and holds more
+        than 8 billion <code>scamper1</code> rows covering roughly 480
+        million unique destination addresses. About 40% never reach the
+        destination. Only 2.1–3.5 million per day are non-duplicate,
+        with just 2.1 million of those complete (<a
+        href="https://measurementlab.net/blog/overview-of-mlab-traceroute/">An
+        Overview of M-Lab’s Traceroute Data</a>).</p>
+        <p>That is enough to study routing at Internet scale.
+        Researchers have used it to show that African routing often
+        leaves the continent and returns, inflating latency (<a
+        href="https://measurementlab.net/blog/africomm-afrinic/">AFRICOMM
+        2018 and AFRINIC-29</a>). It recorded the October 2021 Facebook
+        outage as a spike. It shows that forward and reverse paths can
+        take different routes because each network makes its own
+        forwarding decisions.</p>
+        <p>Reverse traceroute closes the loop. Only about a quarter of
+        NDT tests have a reverse path, but for those the two directions
+        can diverge sharply. In HERMES’s evaluation, the user-to-server
+        route was geographically longer than the server-to-user route in
+        72% of anomalous cases and at least twice as long in 10% (<a
+        href="https://measurementlab.net/blog/revtr_tutorial/">A
+        Hands-On Tutorial with Reverse Traceroute</a>). The IP Route
+        Survey adds independent, continuous coverage of all routable
+        IPv4 prefixes from ten vantage points, in a schema deliberately
+        compatible with <code>scamper1</code>. A local anomaly can then
+        be checked against the broader routing picture (<a
+        href="https://measurementlab.net/blog/iprs-data-on-mlab/">IP
+        Route Survey data published in M-Lab</a>).</p>
+        <p>The barrier to entry is low. At hackathons, this stack has
+        been pointed at the Russia–Ukraine conflict, IPv4/IPv6
+        differences, Hurricane Ian, and continental performance
+        disparities in 90-minute sprints (<a
+        href="https://measurementlab.net/blog/imc22-hackathon/">M-Lab
+        Hackathon at IMC 2022</a>). The binding constraint is questions,
+        not access.</p>
+        <h2 id="protocols-and-platform">Protocols and platform</h2>
+        <p>NDT’s history is also a history of TCP. NDT moved from Reno
+        to Cubic to BBR, from web100 to <code>tcp-info</code>, and from
+        raw sockets to WebSockets on standard ports. Each change altered
+        what the instrument measures, and each is documented so that
+        longitudinal comparisons can be made rather than assumed (<a
+        href="https://measurementlab.net/blog/evolution-of-ndt/">Evolution
+        of NDT</a>).</p>
+        <p>BBR matters because model-based congestion control can fill
+        high-latency, high-loss paths that loss-based TCP cannot. That
+        changes both user experience and the meaning of a speed result
+        (<a href="https://measurementlab.net/blog/tcp-and-bbr/">BBR TCP
+        and Measurement Lab</a>). Neubot data from 2012–2018 across more
+        than 90 countries and up to 4,500 volunteer computers showed the
+        opposite problem. The upper end of transfer speeds grew much
+        faster than the lower end, leaving a growing underload regime in
+        which modern congestion control gets too little feedback to use
+        the capacity that exists (<a
+        href="https://measurementlab.net/blog/underload/">Guest Post:
+        Underload: Today’s Problem of Internet Congestion
+        Control</a>).</p>
+        <p>The instrument’s own costs have become a research subject. At
+        1 Gbps, a 10-second NDT test moves 1.25 GB. Capping the Google
+        Search integration at 250 MB saves about 25% of transferred data
+        with a 95th-percentile throughput error of about 5%, while
+        leaving 91% of clients unaffected because they never reach the
+        cap (<a
+        href="https://measurementlab.net/blog/short-ndt/">Introducing
+        Data Transfer Limits to NDT</a>). MSAK added multi-stream
+        throughput and UDP latency, jitter, and loss, partly to satisfy
+        the FCC’s three-stream mobile measurement requirement and partly
+        to make bufferbloat and real-time quality observable (<a
+        href="https://measurementlab.net/blog/introducing-msak/">Introducing
+        MSAK</a>).</p>
+        <p>Cloud deployment expanded the path diversity. M-Lab ran a
+        virtual site in all 35 Google Cloud regions, with 41 VMs and
+        about 13% of traffic at announcement. Cloud nodes showed lower
+        loss than physical sites in Mumbai and behaved correctly under a
+        test spike (<a
+        href="https://measurementlab.net/blog/virtual-sites-gcp/">M-Lab
+        to the Cloud: Virtual sites in all Google Cloud regions</a>, <a
+        href="https://measurementlab.net/blog/2022-mlab-to-the-cloud/">M-Lab
+        to the Cloud</a>). By the end of 2023, more than 30% of traffic
+        measured to cloud servers (<a
+        href="https://measurementlab.net/blog/end-of-year-letter-2023/">2023
+        Year in Review</a>).</p>
+        <h2 id="the-instrument-as-evidence">The instrument as
+        evidence</h2>
+        <p>Some of the most useful secondary findings are about the
+        measurement system, not the Internet. A 2015 duplication bug
+        doubled every test for a given day at a given site. Because the
+        study relied on daily medians, the published findings were
+        unchanged, while monthly medians shifted by at most about 10%
+        (<a
+        href="https://measurementlab.net/blog/data_duplication_writeup/">Data
+        Duplication Bug in M-Lab BigQuery Data</a>).</p>
+        <p>A Paris Traceroute race condition silently cut coverage from
+        85% of NDT tests to about 5%. Because the failures were
+        geographically systematic, the missing data was not missing at
+        random (<a
+        href="https://measurementlab.net/blog/paris-traceroute-brownout/">Paris
+        Traceroute Brownout</a>). A separate tag-collision bug
+        contaminated 2.7% of traceroutes since July 2016 by mixing hops
+        from concurrent paths. The fix included detection, reprocessing,
+        and preserving the raw archive untouched (<a
+        href="https://measurementlab.net/blog/pt-bug/">Paris Traceroute
+        has a bug, and it causes some bad data</a>).</p>
+        <p>Operational telemetry became a dataset in its own right.
+        DISCO collects 10-second switch counters—unicast, broadcast,
+        multicast, discards, errors, pause frames, octets—for every
+        machine port and site uplink, originally to diagnose microburst
+        discards (<a
+        href="https://measurementlab.net/blog/disco-dataset/">New DISCO
+        switch telemetry dataset</a>). When 10 Gbps servers on 1 Gbps
+        uplinks showed increased discards in 2018, the team used that
+        telemetry plus NDT and SideStream data to show the effect was
+        below the noise floor of Internet performance, and published the
+        notebook (<a
+        href="https://measurementlab.net/blog/switch-discards-redux/">Switch
+        discard investigation for early 2018</a>). The original
+        microburst incident had already produced a durable
+        <code>blacklist_flags</code> field so users could exclude
+        affected tests (<a
+        href="https://measurementlab.net/blog/traffic-microbursts-and-their-effect-on-internet-measurement/">Traffic
+        Microbursts and their Effect on Internet Measurement</a>).</p>
+        <p>Annotations have their own history. Geographic fields moved
+        from MaxMind GeoLite Legacy with FIPS-10-4 regions to GeoLite2
+        with ISO 3166-2 subdivisions. ASN annotations moved to CAIDA
+        RouteViews so that an IP maps to the network that owned it at
+        test time (<a
+        href="https://measurementlab.net/blog/evolution-of-annotations/">Evolution
+        of M-Lab’s Geographic and Network Annotations</a>). The
+        transition broke queries that filtered on
+        <code>client.Geo.Region</code> for two years of ndt7 data. That
+        is a concrete example of why schema stability and provenance are
+        part of the data’s value (<a
+        href="https://measurementlab.net/blog/updates-to-geo-filters/">Updates
+        to Geo Filters</a>).</p>
+        <p>Geolocation has two systems: App Engine metadata for server
+        selection, and MaxMind for publication. Comparing them reveals
+        inconsistencies. Filtering to consistent locations removes 18.4%
+        of IPs in Africa but only 7.9% in South America, which is both a
+        quality control and a warning about coverage bias (<a
+        href="https://measurementlab.net/blog/improving-m-lab-geolocation/">How
+        M-Lab Determines User Location and Selects Servers</a>). Load
+        management is measurement science too. Non-randomized automated
+        clients created synchronized bursts that degraded their own and
+        others’ tests, which is why ndt7 began requiring Locate-issued
+        access tokens (<a
+        href="https://measurementlab.net/blog/why-access-tokens/">Requiring
+        access tokens for ndt7</a>).</p>
+        <h2 id="from-speed-to-quality">From speed to quality</h2>
+        <p>The largest change in the last few years is the move from
+        speed to quality. The Internet Quality Barometer convened more
+        than 60 experts across research, policy, advocacy, and industry
+        to build a composite score across use cases—browsing, video,
+        gaming, conferencing—each with its own latency, throughput, and
+        loss requirements (<a
+        href="https://measurementlab.net/blog/iqb/">Measurement Lab
+        publishes the Internet Quality Barometer Framework</a>).</p>
+        <p>The framework is deliberately auditable. An open-source
+        library and a sensitivity analysis exist. A current fellowship
+        is testing whether scores remain stable across threshold
+        choices, use-case weights, data sparsity, and urban–rural gaps,
+        and whether countries with fragmented markets are systematically
+        misrepresented (<a
+        href="https://measurementlab.net/blog/pulse-fellow-iqb/">IQB
+        Meets Reliability: New Research on M-Lab’s Internet Quality
+        Barometer</a>). That is the right kind of secondary question:
+        not only whether the index works, but for whom it fails and how
+        we would know.</p>
+        <p>The school-connectivity adaptation shows how far the record
+        can travel. Giga, a UNICEF–ITU initiative, runs Giga Meter in
+        schools. The IQB-Edu prototype uses 66 urban and 15 rural
+        Moldovan schools, four measurements per day, with
+        95th-percentile performance as a capacity proxy and median as a
+        typical-experience proxy (<a
+        href="https://measurementlab.net/blog/cop-may-meeting/">Connectivity
+        CoP — May Session Recap</a>). The QoE design document extends
+        NDT’s bulk-transfer regime with DNS lookups over UDP and HTTPS,
+        timed fetches of education-relevant web resources across
+        DNS/TCP/TLS stages, fixed-rate TCP streaming, and MSAK
+        multi-stream tests (<a
+        href="https://measurementlab.net/blog/cop-qoe-design-document/">RFC:
+        Design Document on Quality of Experience Measurements for
+        Schools</a>).</p>
+        <p>The Community of Practice around this work has four
+        workstreams: better tools, facility characterization, IQB-Edu,
+        and new insights from existing data. Its membership spans
+        universities, public agencies, and rural network operators (<a
+        href="https://measurementlab.net/blog/cop-launch/">Connectivity
+        Community of Practice Launch</a>, <a
+        href="https://measurementlab.net/blog/giga-mlab-cop/">M-Lab and
+        Giga to Launch Community of Practice</a>). The Vermont
+        drive-test program, UNHCR’s displacement-context work, and the
+        IQB-Edu policy notebooks sit in the same conversation (<a
+        href="https://measurementlab.net/blog/cop-july-meeting/">Connectivity
+        CoP — July Session Recap</a>).</p>
+        <h2 id="the-infrastructure-of-reuse">The infrastructure of
+        reuse</h2>
+        <p>Reuse does not happen because data is public. It happens when
+        the cost of use is low and the methods are shared. BigQuery
+        tables turned some two-hour queries into eight-second queries
+        (<a
+        href="https://measurementlab.net/blog/new-tables-release/">Making
+        it Easier to Use M-Lab Data</a>). RIPEstat widgets let anyone
+        visualize bandwidth distribution and active-address distribution
+        by country or network (<a
+        href="https://measurementlab.net/blog/ripestat_mlab_widgets/">Explore
+        M-Lab data using the new RIPEstat widgets</a>). The observatory
+        and visualization site made ISP comparisons legible without SQL
+        (<a
+        href="https://measurementlab.net/blog/observatory-new-features/">New
+        Features for M-Lab Internet Observatory</a>).</p>
+        <p>The current Monthly Stats dataset is 18 GB of precomputed
+        summaries from 2009–2026 by country, subdivision, and ASN, with
+        example notebooks in preparation (<a
+        href="https://measurementlab.net/blog/cop-july-meeting/">Connectivity
+        CoP — July Session Recap</a>). An autoloading pipeline publishes
+        ten new data types—Wehe, reverse traceroute, MSAK, and host
+        telemetry among them—and Cloudflare’s speed tests through the
+        same ingestion path (<a
+        href="https://measurementlab.net/blog/end-of-year-letter-2023/">2023
+        Year in Review</a>). The dynamic fleet adds ndt7 views with
+        provenance for servers outside the legacy fleet, so growth in
+        vantage points does not silently break longitudinal analysis (<a
+        href="https://measurementlab.net/blog/dynamic-data-bq/">Measurement
+        Lab publishes new dataset of NDT7 measurements</a>).</p>
+        <p>The human layer matters as much as the pipeline. Fellowships
+        turn open questions into funded work. Hackathons produce
+        reproducible Colab notebooks in 90 minutes. The Open Measurement
+        Gatherings built trust and a shared user guide across M-Lab,
+        OONI, IODA, and Censored Planet (<a
+        href="https://measurementlab.net/blog/open-measurement-gathering-1/">Open
+        Measurement Gathering</a>, <a
+        href="https://measurementlab.net/blog/omg4/">OMG User Guide and
+        fourth convening</a>, <a
+        href="https://measurementlab.net/blog/omg3/">OMG AMA</a>).</p>
+        <p>M-Lab also publishes the cases where openness has costs. The
+        SamKnows experiment left the platform when it would not provide
+        an open-source server, despite years of partnership with the
+        FCC’s Measuring Broadband America program (<a
+        href="https://measurementlab.net/blog/mlab-public-statement-samknows-experiment/">Recent
+        updates regarding the SamKnows experiment</a>). Openness is
+        enforced technically, not just declared.</p>
+        <h2 id="the-inventory-compressed">The inventory, compressed</h2>
+        <p>The record shows eight kinds of reuse:</p>
+        <ul>
+        <li><strong>Longitudinal series answer market-structure
+        questions</strong> that no single test can: interconnection
+        congestion, its peak-hour signature, its remediation, and the
+        effect of policy (<a
+        href="https://measurementlab.net/blog/2014_interconnection_report/">2014
+        report</a>, <a
+        href="https://measurementlab.net/blog/interconnection_update/">2017
+        update</a>).</li>
+        <li><strong>Crowdsourced tests become an observatory</strong>
+        when grouped by access network, location, and destination and
+        compared with a baseline. This is how slowdowns invisible to
+        outage monitors become visible (<a
+        href="https://measurementlab.net/blog/hermes/">HERMES</a>).</li>
+        <li><strong>Raw traces answer questions the summary metrics
+        cannot</strong>, from ToS markings to the cause of a traceroute
+        gap (<a
+        href="https://measurementlab.net/blog/research_update1/">2014
+        research update</a>, <a
+        href="https://measurementlab.net/blog/paris-traceroute-brownout/">Paris
+        Traceroute brownout</a>).</li>
+        <li><strong>Operational exhaust is data.</strong> Switch
+        counters diagnosed measurement artifacts and became a standard
+        table. Access tokens, annotations, and schema versions are part
+        of the scientific record (<a
+        href="https://measurementlab.net/blog/disco-dataset/">DISCO</a>,
+        <a
+        href="https://measurementlab.net/blog/why-access-tokens/">access
+        tokens</a>).</li>
+        <li><strong>Joins create new instruments</strong>: NDT with BGP,
+        reverse traceroute, IPRS, Wehe, Cloudflare AIM, and school
+        enrollment data (<a
+        href="https://measurementlab.net/blog/iprs-data-on-mlab/">IPRS</a>,
+        <a
+        href="https://measurementlab.net/blog/wehe-bigquery-announcement/">Wehe</a>,
+        <a
+        href="https://measurementlab.net/blog/cop-may-meeting/">IQB-Edu</a>).</li>
+        <li><strong>Local collection recovers what national data
+        loses.</strong> Premise devices, volunteered location, and
+        institutional context turn a city-level average into an
+        actionable finding (<a
+        href="https://measurementlab.net/blog/exploring-geographic-limits-of-ip-geolocation/">Baltimore</a>,
+        <a
+        href="https://measurementlab.net/blog/murakami/">Murakami</a>,
+        <a
+        href="https://measurementlab.net/blog/communities-driving-broadband-mapping/">Louisville</a>).</li>
+        <li><strong>Measurement changes behavior.</strong> Published
+        comparisons documented or informed fiber spending, regulatory
+        tools, interconnection upgrades, and school-connectivity
+        planning (<a
+        href="https://measurementlab.net/blog/communities-driving-broadband-mapping/">Louisville</a>,
+        <a
+        href="https://measurementlab.net/blog/wehe-launch/">Arcep/Wehe</a>,
+        <a
+        href="https://measurementlab.net/blog/giga-mlab-cop/">Giga</a>).</li>
+        <li><strong>The method is transferable.</strong> Off-net
+        vs. on-net, single vs. multi-stream, per-ASN aggregation, log
+        scales, peak/off-peak separation, and client-bias correction
+        apply to any measurement proposal (<a
+        href="https://measurementlab.net/blog/mlab-data-policy-advocacy/">policy
+        recommendations</a>, <a
+        href="https://measurementlab.net/blog/ntia/">NTIA
+        comparison</a>).</li>
+        </ul>
+        <p>The proposal frame is “unlocking latent value.” The record
+        suggests a more specific definition. Latent value is the return
+        on reuse: new services add columns that can be joined to old
+        context; old raw archives can be reprocessed under better
+        annotations; operational logs become datasets; composite indices
+        get stability tests before they guide money; local questions get
+        collection designs, not just maps. A proposal that protects the
+        raw record, the methods, and the ability to rerun the analysis
+        in public can point to fifteen years of precedent. That is the
+        strongest case for the next fifteen.</p>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p><strong>Provenance.</strong> This is an independent snapshot, not an official M-Lab publication. The cited posts and measurements remain M-Lab's work. Corrections and additions are welcome.</p>
+    <p class="footer-links">
+      <a href="measurement-data-inventory.md">Markdown source</a>
+      <span aria-hidden="true">·</span>
+      <a href="measurement-retrospective.svg">SVG source</a>
+      <span aria-hidden="true">·</span>
+      <a href="https://github.com/jduckles/mlab-snapshot-2026">Repository</a>
+    </p>
+    <p class="cite">Cite: Duckles, Jonah. <em>M-Lab Snapshot 2026.</em> 2026. https://jduckles.github.io/mlab-snapshot-2026/</p>
+  </footer>
+</body>
+</html>

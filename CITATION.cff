@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this snapshot, please cite it."
+title: "M-Lab Snapshot 2026"
+abstract: "An independent synthesis of what 15+ years of M-Lab's open Internet measurement record has been used to show, with a linked timeline and an annotated inventory of 61 source posts."
+authors:
+  - family-names: Duckles
+    given-names: Jonah
+date-released: 2026-10-20
+url: "https://jduckles.github.io/mlab-snapshot-2026/"
+license: CC-BY-4.0
+keywords:
+  - Internet measurement
+  - Measurement Lab
+  - open data
+  - broadband
+  - network performance
