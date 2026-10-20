@@ -8,7 +8,7 @@ I compiled this from 61 posts in M-Lab's blog archive, 2013–2026. It is not an
 
 ## What is here
 
-- [`index.html`](index.html) — the GitHub Pages page: a linked timeline plus the full annotated inventory.
+- `index.html` — generated at build time; the GitHub Pages page with the linked timeline and full annotated inventory.
 - [`measurement-retrospective.svg`](measurement-retrospective.svg) — the standalone timeline. Each milestone links to its source post.
 - [`measurement-data-inventory.md`](measurement-data-inventory.md) — the annotated inventory, with 81 inline citations to 61 posts.
 - `template.html`, `styles.css`, `build.py` — the build that turns the Markdown and SVG into the page.
@@ -25,9 +25,12 @@ Requires [Pandoc](https://pandoc.org/).
 
 ```sh
 python3 build.py
+open index.html
 ```
 
 This regenerates `index.html` from `measurement-data-inventory.md`, `measurement-retrospective.svg`, and `template.html`.
+
+GitHub Actions rebuilds and deploys the page whenever `measurement-data-inventory.md`, the SVG, the template, the stylesheet, or the build script changes on `main`. The generated `index.html` is not tracked.
 
 ## Links
 
