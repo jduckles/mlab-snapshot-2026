@@ -1,6 +1,6 @@
 # What Internet Measurement Data Is For
 
-*An annotated inventory of reuse in M-Lab's public record, 2013–2026*
+*An AI assisted, annotated inventory of reuse in M-Lab's public record of blog posts, 2013–2026*
 
 A speed test answers a narrow question: how fast can this connection move data right now? The record it leaves behind can answer other questions. It includes throughput, latency, loss, the addresses at both ends, the path between them, and the conditions under which the test ran. Aggregated over millions of tests and fifteen years, that record becomes evidence about peering, disasters, pandemic demand, school connectivity, protocol design, regulation, and the measurement system itself.
 
@@ -108,17 +108,3 @@ The human layer matters as much as the pipeline. Fellowships turn open questions
 
 M-Lab also publishes the cases where openness has costs. The SamKnows experiment left the platform when it would not provide an open-source server, despite years of partnership with the FCC's Measuring Broadband America program ([Recent updates regarding the SamKnows experiment](https://measurementlab.net/blog/mlab-public-statement-samknows-experiment/)). Openness is enforced technically, not just declared.
 
-## The inventory, compressed
-
-The record shows eight kinds of reuse:
-
-- **Longitudinal series answer market-structure questions** that no single test can: interconnection congestion, its peak-hour signature, its remediation, and the effect of policy ([2014 report](https://measurementlab.net/blog/2014_interconnection_report/), [2017 update](https://measurementlab.net/blog/interconnection_update/)).
-- **Crowdsourced tests become an observatory** when grouped by access network, location, and destination and compared with a baseline. This is how slowdowns invisible to outage monitors become visible ([HERMES](https://measurementlab.net/blog/hermes/)).
-- **Raw traces answer questions the summary metrics cannot**, from ToS markings to the cause of a traceroute gap ([2014 research update](https://measurementlab.net/blog/research_update1/), [Paris Traceroute brownout](https://measurementlab.net/blog/paris-traceroute-brownout/)).
-- **Operational exhaust is data.** Switch counters diagnosed measurement artifacts and became a standard table. Access tokens, annotations, and schema versions are part of the scientific record ([DISCO](https://measurementlab.net/blog/disco-dataset/), [access tokens](https://measurementlab.net/blog/why-access-tokens/)).
-- **Joins create new instruments**: NDT with BGP, reverse traceroute, IPRS, Wehe, Cloudflare AIM, and school enrollment data ([IPRS](https://measurementlab.net/blog/iprs-data-on-mlab/), [Wehe](https://measurementlab.net/blog/wehe-bigquery-announcement/), [IQB-Edu](https://measurementlab.net/blog/cop-may-meeting/)).
-- **Local collection recovers what national data loses.** Premise devices, volunteered location, and institutional context turn a city-level average into an actionable finding ([Baltimore](https://measurementlab.net/blog/exploring-geographic-limits-of-ip-geolocation/), [Murakami](https://measurementlab.net/blog/murakami/), [Louisville](https://measurementlab.net/blog/communities-driving-broadband-mapping/)).
-- **Measurement changes behavior.** Published comparisons documented or informed fiber spending, regulatory tools, interconnection upgrades, and school-connectivity planning ([Louisville](https://measurementlab.net/blog/communities-driving-broadband-mapping/), [Arcep/Wehe](https://measurementlab.net/blog/wehe-launch/), [Giga](https://measurementlab.net/blog/giga-mlab-cop/)).
-- **The method is transferable.** Off-net vs. on-net, single vs. multi-stream, per-ASN aggregation, log scales, peak/off-peak separation, and client-bias correction apply to any measurement proposal ([policy recommendations](https://measurementlab.net/blog/mlab-data-policy-advocacy/), [NTIA comparison](https://measurementlab.net/blog/ntia/)).
-
-The proposal frame is "unlocking latent value." The record suggests a more specific definition. Latent value is the return on reuse: new services add columns that can be joined to old context; old raw archives can be reprocessed under better annotations; operational logs become datasets; composite indices get stability tests before they guide money; local questions get collection designs, not just maps. A proposal that protects the raw record, the methods, and the ability to rerun the analysis in public can point to fifteen years of precedent. That is the strongest case for the next fifteen.
